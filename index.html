@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72b68182d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+         <div class="container">
+            <nav>
+               
+                <h1 class="logo"><span style="color: red;">J</span>agadeesh.</h1>
+                 <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Jagadeesh</span></h1>
+                <p style="color: #ff0000;">Frontend Developer</p>
+                <span style="font-size: 18px; color: gray; ">As a dedicated Frontend Developer,I have crafted engaging,<br>
+                    responsive,and accessible web applications using modern <br>
+                    technologies.My expertise lies in HTML,CSS,and JavaScript, <br>
+                    enabling me to transform designs into seamless user experiences. <br>
+                    With a keen eye for detail and a passion for web development,<br>
+                    I consistently deliver high-quality code and innovative solutions</span>
+            </div> 
+         </div>
+    </div>
+
+<!-- ----------------about-------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br><br>
+                    <p>Detail-oriented Web Developer with a passion for responsive design, <br><br> Skilled in HTML, CSS, and JavaScript,
+                        I excel in collaborative environments, <br><br>delivering high-quality front-end solutions. Seeking a challenging role, <br><br>
+                        with a reputable company where I can contribute my expertise and passion.</p><br>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Technologies</span><br><br>HTML,CSS,JavaScript</li>
+                                <li><span>Frame Works</span><br><br>React.js,Bootstrap</li>
+                                <li><span>Tools</span><br><br>Git,Github,VS code</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Degree</span><br><br>B.sc Computer Science From ABM Degree College <br>2020-2023</li>
+                                <li><span>Inter</span><br><br>MPC From ABM Junior College <br>2018-2020</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="certification">
+                            <ul>
+                                <li><span>Web Developer</span><br><br>Complete Web Development In SOLOLERAN Website <br>2024</li>
+                                <li><span>Python Developer</span><br><br>Complete Python Development In SOLOLERAN Website <br>2024</li>
+                                
+                            </ul>
+                        </div>
+                </div>      
+        </div>
+    </div>
+
+    <!-- --------------------projects----------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis! Labore aliquid explicabo repudiandae, suscipit eum reprehenderit error. Soluta, eligendi. Repellendus iste omnis pariatur nesciunt alias assumenda hic ex ut?</p><br>
+                    <a href="#">See More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis! Labore aliquid explicabo repudiandae, suscipit eum reprehenderit error. Soluta, eligendi. Repellendus iste omnis pariatur nesciunt alias assumenda hic ex ut?</p><br>
+                    <a href="#">See More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis! Labore aliquid explicabo repudiandae, suscipit eum reprehenderit error. Soluta, eligendi. Repellendus iste omnis pariatur nesciunt alias assumenda hic ex ut?</p><br>
+                    <a href="#">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------------certification------------------------ -->
+
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="certification-list">
+                <img src="images/web.png" alt="">
+                <div>
+                    <i class="fa-solid fa-certificate"></i> 
+                    <h2>Web development</h2>
+                    <p>I Have Completed Web Development Course In SOLOLERAN</p>
+                </div>
+                
+                <img src="images/python.jpg" alt="">
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <h2>Python development</h2>
+                    <p>I Have Completed Python Development Course In SOLOLERAN</p>
+                </div>
+
+                <img src="images/sql.png" alt="">
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <h2>SQL Certificate</h2>
+                    <p>I Have Completed SQL Intermediate Course In SOLOLERAN</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- ---------------------conatct---------------------- -->
+
+
+ <div id="contact">
+    <div class="container">
+       <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>jagadeeshsetti28@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>7093812847</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/jagadeesh-setti-8173442b5"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Jagadeeshsetti"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></i></a>
+        </div> 
+        <a href="images/my-CV.pdf" download class="btn btn2">Download CV</a>    
+           </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your E-mail " required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>  
+            <span id="msg"></span>  
+        </div>
+       </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Made With By <i class="fa-solid fa-heart"></i>  Jagadeesh 2024. </p>
+    </div>
+</div>
+
+
+    <script>
+
+         var tablinks = document.getElementsByClassName("tab-links")
+         var tabcontents = document.getElementsByClassName("tab-contents")
+
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+         }
+
+    </script>
+
+<script>
+    var sidemue = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemue.style.right ="0";
+    }
+    function closemenu(){
+        sidemue.style.right ="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwLiyf4698Vy906Qr9MCGnl3qBcG8cDTUeIq38eUQPUPZZvVnwrfkpTmpz9wXu9zuWlfw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },2000)
+                form.reset()
+            })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
